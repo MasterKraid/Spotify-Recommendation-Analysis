@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Recommendation Demo by Kraid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="auth-container">
+    <h1>Spotify Recommendations</h1>
+    <form id="auth-form">
+      <input type="text" id="username" placeholder="Choose your username" required>
+      <select id="region" required>
+        <option value="">Select Region</option>
+        <option value="USA">USA</option>
+        <option value="EU">EU</option>
+        <option value="India">India</option>
+        <option value="Japan">Japan</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Korea">Korea</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+        <option value="Australia">Australia</option>
+        <option value="Germany">Germany</option>
+        <option value="France">France</option>
+      </select>
+      <button type="submit">Get Started</button>
+    </form>
+  </div>
+  <div id="main-container">
+    <div class="header">
+      <div class="left">
+        <h2>Welcome, <span id="display-username"></span></h2>
+      </div>
+      <div class="right">
+        <button id="theme-toggle">Switch Theme</button>
+        <div class="refresh-btn" onclick="generateRecommendations()">Refresh Recommendations</div>
+      </div>
+    </div>
+    <div class="song-list" id="recommendations"></div>
+    <div id="now-playing">
+      <div class="album-art">🎵</div>
+      <div class="player-controls">
+        <button class="control-btn" onclick="playPrevious()">⏮</button>
+        <button class="control-btn" id="play-pause-btn" onclick="togglePlay()">⏸</button>
+        <button class="control-btn" onclick="playNext()">⏭</button>
+      </div>
+      <span id="current-song"></span>
+      <span id="song-timer">0:00</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
