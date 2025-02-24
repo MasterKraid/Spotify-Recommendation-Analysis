@@ -26,7 +26,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 1. **Clone the Repository:**
 
    ```bash
-   git clone <https://github.com/MasterKraid/Spotify-Recommendation-Analysis>
+   git clone https://github.com/MasterKraid/Spotify-Recommendation-Analysis
    cd <repository-folder>
 
 2. **Install Dependencies:**
